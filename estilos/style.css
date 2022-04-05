@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:rgba(243, 213, 188, 0.864);
+}
+
+.bloque-1{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+}
+
+.bloque-1 .content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    z-index: 900;
+}
+
+.bloque-1 .content .img{
+    height: 50%;
+    margin-bottom: 20px;
+}
+.bloque-1 .content .img img{
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: contain ;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.bloque-1 .content span{
+    position: absolute;
+    width: 450px;
+    height: 200px;
+    transform: rotate(-35deg);
+    background: linear-gradient(to right, #5e2066, #b332c7);
+    top: -80px;
+    left: -100px;
+}
+
+.bloque-1 .content h3{
+    font-size: 18px;
+    color: #1a1919;
+    margin-bottom: 5px;
+}
+
+.bloque-1 .content h6{
+    font-size: 14px;
+    color: #5e2066;
+    margin-bottom: 5px;
+}
+
+.bloque-1 .content p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.bloque-1 .links{
+    position: absolute;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, .4);
+    padding: 20px;
+    align-items: center;
+    right: 10px;
+    top: 15px;
+    transition: .5s;
+    z-index: 100;
+}
+
+.bloque-1:hover .links{
+    right: -100px;
+    border-radius: 0 10px 10px 0;
+}
+
+.bloque-1 .links a{
+    font-size: 20px;
+    color: #646069;
+}
+
+.bloque-1 .links a:nth-child(1):hover{
+    color:#0158ca ;
+}
+
+.bloque-1 .links a:nth-child(2):hover{
+    color:#1c93E4 ;
+}
+
+.bloque-1 .links a:nth-child(3):hover{
+    color:#ca01a5a0 ;
+}
+
+.bloque-1 .links a:nth-child(4):hover{
+    color: #FE0000 ;
+}
+
+.bloque-1 .links a:nth-child(5):hover{
+    color:#50277D ;
+}
